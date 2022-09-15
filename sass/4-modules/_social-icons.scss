@@ -1,0 +1,40 @@
+.social-icons{
+
+    & li{
+        display: inline-block;
+
+        &:not(:last-child){
+            margin-right: .5rem;
+        }
+    }
+
+    & a{
+        display: inline-block;
+        @include size(3.5rem, 3.5rem);
+        line-height: 3.5rem;
+        text-align: center;
+        background: $color-black-light;
+        color: $color-white;
+        border-radius: 50%;
+
+        &.facebook:hover{
+            background: #213553;
+        }
+
+        &.twitter:hover{
+            background: #3aa8db;
+        }
+
+        &.google:hover{
+            background: #d04f3e;
+        }
+
+        &.youtube:hover{
+            background: #ed4533;
+        }
+
+        &.instagram:hover{
+            background: #4f86ac;
+        }
+    }
+}

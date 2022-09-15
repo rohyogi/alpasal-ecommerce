@@ -1,0 +1,20 @@
+.section-title-wrapper{
+    margin-bottom: 2rem;
+
+    h3{
+        font-size: 18px;
+        color: #1f2022;
+        text-transform: uppercase;
+        font-weight: 700;
+        letter-spacing: 0.5px;
+    }
+}
+
+.title-tab{
+    border-bottom: 1px solid $color-border;
+
+    h3{
+        line-height: 1.7;
+    }
+}
+

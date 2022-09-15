@@ -1,0 +1,263 @@
+/*------------------------
+-----------Footer------
+-------------------------*/
+
+.footer-main{
+    padding-top: 4rem;
+}
+
+
+.top-footer{
+    padding: 2rem 0;
+}
+
+.top-footer{
+    border-bottom: 1px solid rgba(0,0,0,0.15);
+}
+
+.footer-logo-wrap{
+    width: 100%;
+    height: 6rem;
+    margin-bottom: 1rem;
+}
+
+.footer-logo-wrap img{
+    /* width: 100%; */
+    height: 100%;
+    -o-object-fit: contain;
+       object-fit: contain;
+}
+
+
+.footer-icon img{
+    height: 2.5rem;
+    width: 2.5rem;
+    -o-object-fit: contain;
+       object-fit: contain;
+    margin-right: 1rem;
+}
+
+.footer-detail p{
+    font-size: 1.4rem;
+    color: $color-footer;
+}
+
+.footer-title{
+    display: inline-block;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 1.8rem;
+    color: #333;
+    padding: 2.5rem 0 .7rem;
+    margin-bottom: 2rem;
+    position: relative;
+}
+
+.footer-title::before{
+    content:'';
+    width: 75%;
+    height: 2px;
+    background: $color-primary;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.footer-list li{
+    margin: .5rem 0;
+    position: relative;
+}
+
+.footer-list li:first-child{
+    margin-top: 0;
+}
+
+.footer-list li::before{
+    content: '\f192';
+    color: #333;
+    font-family: "Font Awesome 5 Free";
+    margin-right: 1rem;
+    font-size: 1rem;
+}
+
+.footer-list li a{
+    font-size: 1.4rem;
+    color: $color-footer;
+}
+
+.footer-list li a:hover{
+    color: $color-primary;
+}
+
+/* MID_FOOTER */
+
+.middle-footer{
+    padding: 3rem 0;
+}
+
+.footer-links li,
+.mini-comp-logo li,
+.comp-logo li{
+    display: inline-block;
+    margin: .5rem 1rem;
+}
+
+.mini-comp-logo li{
+    margin: .5rem;
+}
+
+.comp-logo li img{
+    height: 3rem;
+    -o-object-fit: contain;
+       object-fit: contain;
+}
+
+.mini-comp-logo li img{
+    height: 1.5rem;
+    -o-object-fit: contain;
+       object-fit: contain;
+}
+
+.footer-links{
+    margin: 2rem 0;
+}
+
+.whole-title a,
+.footer-links li a{
+    color: $color-footer;
+    font-size: 1.3rem;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.footer-links li a:hover{
+    color: $color-primary;
+}
+
+.middle-footer p{
+    font-size: 1.3rem;
+    line-height: 1.8;
+    color: $color-footer;
+    margin-bottom: 2rem;
+}
+
+.resp-short{
+    width: 80%;
+    margin: 0 auto;
+}
+
+@media only screen and (max-width: 580px){
+    .resp-short{
+        width: 100%;
+    }
+}
+
+/* COPYRIGHT */
+
+.copyright-wrapper{
+    padding: 1.2rem 0;
+    background: #333;
+}
+
+.copyright{
+    color: rgba(255,255,255, 0.8);
+    font-size: 1.3rem;
+    font-weight: 300;
+}
+
+.copyright a{
+    color: $color-primary;
+    font-size: 1.4rem;
+    font-weight: 400;
+
+    &:hover{
+        color: $color-white;
+    }
+}
+
+/*------------------------
+-----------Footer------
+-------------------------*/
+
+.whole-category {
+
+    & .footer-title{
+        padding-top: 0;
+    }
+
+    & .d-flex .main{
+        white-space: nowrap;
+    }
+
+    & ul{
+
+        & li{
+            display: inline-block;
+            // padding: 0 .5rem 0 .3rem;
+            padding: 0 .3rem;
+            line-height: 1;
+
+            &:nth-child(2),
+            &:first-child{
+                padding-left: 0;
+            }
+
+            &:last-child{
+                padding-right: 0;
+            }
+
+            &:not(:last-child){
+                border-right: 1px solid rgba($color-black, .3);
+            }
+
+            &.whole-title{
+                border-right: 0;
+            }
+
+            & a{
+                display: inline-block;
+                font-size: 1.3rem;
+                color: $color-footer;
+
+                &:hover{
+                    color: $color-primary;
+                }
+            }
+        }
+
+    }
+}
+
+.top-footer{
+    & .newsletter{
+        margin-bottom: 2rem;
+    }
+
+    & .app-logos{
+
+        & li{
+            display: block;
+            @include mQ(575px){
+                display: inline-block;
+                margin: 0 1rem;
+            }
+            @include mQs(1400px){
+                display: inline-block;
+                margin: 0 1rem;
+            }
+
+            &:not(:last-child){
+                margin-bottom: 1rem;
+                @include mQ(575px){
+                    margin-bottom: 0;
+                }
+            }
+
+            & img{
+                height: 4rem;
+                -o-object-fit: cover;
+                   object-fit: cover
+            }
+        }
+    }
+}

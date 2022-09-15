@@ -1,0 +1,29 @@
+.slider-wrapper{
+    @include size(34%, 100%);
+
+    & img{
+        @include size(100%, 100%);
+        object-fit: contain;
+    }
+}
+
+.owl-dots {
+    text-align: center;
+    position: absolute;
+    bottom: 1rem;
+    width: 100%;
+    left: 0;
+    right: 0;
+
+     & .owl-dot{
+        @include size(1rem, 1rem);
+        border-radius: 50%;
+        background: rgba($color-white, .7) !important;
+        margin: 0 .3rem;
+        outline: none;
+
+        &.active{
+            background: $color-white !important;
+        }
+    }
+}

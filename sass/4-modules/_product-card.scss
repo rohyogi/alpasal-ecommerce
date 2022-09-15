@@ -1,0 +1,126 @@
+.product-card{
+    border: 1px solid $color-border;
+    margin-bottom: 1rem;
+    @include trans(.5s);
+    -webkit-transition-timing-function: ease;
+            transition-timing-function: ease;
+    margin-right: 1px;
+
+    &:hover{
+       -webkit-box-shadow: 0px 3px 6px 0px rgba(109, 109, 109, 0.25);
+               box-shadow: 0px 3px 6px 0px rgba(109, 109, 109, 0.25);
+       cursor: pointer;
+    }
+
+    & .card-image{
+        background: $color-white;
+        @include size(18rem, 100%);
+        overflow: hidden;
+        position: relative;
+
+        & img{
+            @include size(100%, 100%);
+            -o-object-fit: contain;
+               object-fit: contain;
+        }
+
+        & .card-buttons{
+            width: 100%;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+        }
+    }
+
+    & .card-detail{
+        border-top: 1px solid $color-border;
+        padding: 1rem 1.5rem;
+        background: $color-white;
+    }
+
+    & .product-title{
+        line-height: 1.7rem;
+        margin: 3px 0px;
+    }
+
+    & .product-title a{
+        font-size: 1.3rem;
+        color: $color-black;
+        font-weight: 500;
+
+        &:hover{
+            color: $color-primary;
+        }
+    }
+
+    & .product-price{
+        font-size: 1.5rem;
+        color: $color-primary;
+        font-weight: 700;
+        letter-spacing: .5px;
+
+        & span{
+            text-decoration: line-through;
+            font-weight: 400;
+            color: $color-light;
+            display: block;
+            font-size: 1.3rem;
+        }
+    }
+
+    & .rating{
+
+        & li i{
+            color: $color-light;
+            font-size: 1.1rem;
+
+            &.active{
+                color: $color-primary;
+            }
+        }
+    }
+
+    &:hover .card-buttons{
+        -webkit-transform: translateY(0);
+                transform: translateY(0);
+    }
+    
+}
+
+.card-buttons{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-transform: translateY(100%);
+            transform: translateY(100%);
+    @include trans(.3s);
+
+    @include mQ(990px){
+        -webkit-transform: translateY(0);
+                transform: translateY(0);
+    }
+
+    & a{
+        display: inline-block;
+        padding: .7rem 0;
+        background: $color-primary;
+        border: 1px solid rgba($color-white, .4);
+        text-align: center;
+        text-transform: uppercase;
+        font-size: 1.3rem;
+        color: $color-white;
+
+        &:hover{
+            background: $color-black;
+        }
+
+        &:first-child{
+            width: 55%;
+        }
+        
+        &:not(:first-child){
+            width: 15%;
+        }
+    }
+}

@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap');
+
+.btn-main{
+    display: inline-block;
+    background: $color-primary;
+    color: $color-white;
+    padding: 1.2rem 2rem;
+    outline: none;
+    border: none;
+    position: relative;
+    z-index: 2;
+
+    &::before{
+        content: '';
+        height: 100%;
+        width: 0;
+        background: darken($color-primary, 10%);
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        z-index: -2;
+        @include trans(.3s);
+    }
+
+    &:hover::before{
+        width: 100%;
+    }
+}
+
+
+.text-center .footer-title{
+
+    &::before{
+        margin: 0 auto;
+        left: 0;
+        right: 0;
+    }
+}

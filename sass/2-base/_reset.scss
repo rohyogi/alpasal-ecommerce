@@ -1,0 +1,57 @@
+/*********
+ Project Name: Alpasal Ecommerce
+ Project Category: Ecommerce
+ Developed by: Rohan Yogi
+ Author: Rohan Yogi (Frontend Developer)
+ Date: August 2019
+************/
+
+
+
+/**--ClearFix---**/
+.clearfix::after{
+    content:'';
+    display: block;
+    clear:both;
+}
+
+::selection
+{
+	background: $color-primary;
+	color: #fff;
+}
+
+*,
+*::before,
+*::after{
+-webkit-box-sizing: inherit;
+        box-sizing: inherit;
+margin: 0;
+padding: 0;
+}
+
+
+html {
+    font-size: 62.5%; 
+
+    @include mQ(75em){
+        font-size: 56.25%;
+    }
+
+    @include mQ(56.25em){
+        font-size: 50%;
+    }
+
+    @include mQ(1rem){
+        font-size: 75%;
+    }
+}
+
+body{
+-webkit-box-sizing: border-box;
+        box-sizing: border-box;
+font-size: 1.6rem;
+font-family: $font-primary;
+overflow-x: hidden;
+position: relative;
+}

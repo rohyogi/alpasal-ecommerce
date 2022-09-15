@@ -1,0 +1,29 @@
+.custom-grid{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    width: 100%;
+
+    &-item{
+        width: calc(100% / 8);
+        padding: 0 .5rem;
+
+        @include mQ(1370px){
+            width: calc(100% / 6);
+        }
+
+        @include mQ(990px){
+            width: calc(100% / 3);
+        }
+
+        @include mQ(750px){
+            width: calc(100% / 2);
+        }
+
+        @include mQ(350px){
+            width: calc(100% / 1);
+        }
+    }
+}

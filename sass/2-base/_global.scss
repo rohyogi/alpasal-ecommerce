@@ -1,0 +1,61 @@
+a,
+a:hover,
+a:active{
+    text-decoration: none;
+    color: $color-black;
+}
+
+h1,h2,h3,h4,h5,h6,p,
+ul{
+    padding: 0;
+    margin: 0;
+}
+
+a,
+button{
+    cursor: pointer;
+    @include trans(.3s);
+}
+
+.color-white{
+    color: $color-white !important;
+}
+
+.common-padding{
+    padding: 3rem 0 !important;
+}
+
+.color-primary{
+    color: $color-primary !important;
+}
+
+.no-top{
+    padding-top: 0 !important;
+}
+
+.no-bottom{
+    padding-bottom: 0 !important;
+}
+
+.bg-primary{
+    background: $color-primary !important;
+}
+
+.bg-para{
+    background-attachment: fixed !important;
+}
+
+.bg-img{
+    background-position: center !important;
+    background-size: cover !important;
+    background-repeat: no-repeat !important;
+}
+
+.bg-grey{
+    background: $color-grey-light !important;
+}
+
+.side-listing li{
+    display: inline-block !important;
+}
+
